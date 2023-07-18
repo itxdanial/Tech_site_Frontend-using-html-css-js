@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+    .nav-list{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-list li{
+        list-style: none;
+        padding: 23px;
+
+    }
+    .nav-list li a{
+        font-family: 'Tektur';
+        text-decoration: none;
+        color: white;
+    }
+    .nav-list li a:hover{
+        font-family: 'Tektur';
+        text-decoration: none;
+        color: gray;
+    }
+    .rightnav{
+        font-family: 'Tektur';
+        text-align: right;
+        width: 50%;
+        padding: 0 23px;
+    }
+    #search{
+        font-family: 'Tektur';
+        padding: 5px;
+        font-size: 17px;
+        border: 2px solid gray;
+        border-radius: 9px;
+    }
+    .background{
+        background-color: rgba(0, 0, 0, 0.7) url('../img/2.jpg');
+        background-image: url('../img/main.jpeg');
+        background-size: cover;
+        background-blend-mode: darken;
+
+
+    }
+.firstsection{
+    font-family: 'Tektur';
+    height: 100vh;
+
+}
+.firsthalf{
+    font-family: 'Tektur';
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    font-family: 'Tektur';
+    width: 70%;
+    /* padding: 4px 0px; */
+    border: 4px solid white;
+    border-radius: 90%;
+    border: round;
+    display: block;
+    margin: auto;
+
+
+}
+.box-main{
+    font-family: 'Tektur';
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:50%;
+    margin: auto;
+}
+.text-big{
+    font-family: 'Tektur';
+font-size: 40px;
+
+}
+.text-small{
+    font-family: 'Tektur';
+    font-size: 18px;
+
+}
+.btn{
+    font-family: 'Tektur';
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.secright{
+    font-family: 'Tektur';
+/* height: 500px; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+max-width: 80%;
+margin: auto;
+}
+.secleft{
+    font-family: 'Tektur';
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+    }
+.paras{
+    padding: 0 65px;
+}
+ /* .imgfluid{ }  */
+ .contact{
+    padding: 7px;
+    height: 120vh;
+    
+ }
+ .text-center{
+    font-family: 'Tektur';
+    text-align: center;
+    padding: 7px;
+    font-size: 40px;
+ }
+ .form{
+    max-width: 1000px;
+    margin: 12px auto;
+ }
+ .form-input{
+    font-family: 'Tektur';
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+ }
+ .text-footer{
+    font-family: 'Tektur';
+    text-align: center;
+    padding: 30px 0px;
+    /* font-size: 40px; */
+    display:flex;
+    justify-content: center;
+    color: white;
+ }
+ .burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+
+ }
+ .line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+ }
+ @media only screen and (max-width:1140px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse  ;
+    }
+    .paras{
+        padding: 0%;
+    }
+    .contact{
+        max-width: 90%;
+    }
+ }
